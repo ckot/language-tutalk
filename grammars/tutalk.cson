@@ -1,0 +1,51 @@
+'scopeName': 'source.tutalk'
+'name': 'TuTalk Scenario Language'
+'fileTypes': ['sc', 'sch']
+'patterns': [
+  {'include': '#comment'}
+  {'include': '#truth_value'}
+  {'include': '#block'}
+  {'include': '#attributes'}
+  {'include': '#keywords'}
+  {'include': '#conditional'}
+  {'include': '#string_literal'}
+  {'include': '#identifier'}
+]
+'repository':
+  'comment':
+    'match': '\\s*#.+$'
+    'name': 'comment.line.tutalk'
+  'string_literal':
+    'name': 'string.quoted.double.tutalk'
+    'begin': '"'
+    'end': '"'
+  'identifier':
+    'match': '\\b([-a-zA-Z0-9.]+)\\b'
+    'captures':
+      '1':
+        'name': 'entity.name.function.tutalk'
+  'attributes':
+    'match': '\\b(trans|min|sem|diff|kc)\\s'
+    'captures':
+      '1':
+        'name': 'storage.modifier.tutalk'
+  'keywords':
+    'match': '\\b(say|do)\\b'
+    'captures':
+      '1':
+        'name': 'keyword.control.loop.tutalk'
+  'conditional':
+    'match': '\\b(if|else|response|unant)\\b'
+    'captures':
+      '1':
+        'name': 'storage.type.tutalk'
+  'block':
+    'match': '\\b(c|g)\\s'
+    'captures':
+      '1':
+        'name': 'entity.name.type.tutalk'
+  'truth_value':
+    'match': '\\b(true|false|partial)\\b'
+    'captures':
+      '1':
+        'name': 'constant.language.boolean.tutalk'
