@@ -1,5 +1,4 @@
 # language-tutalk
-[![apm][2]][1]
 
 * TuTalk Scenario language support in Atom (.sc and .sch files)
 
