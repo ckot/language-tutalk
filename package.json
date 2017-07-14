@@ -1,6 +1,6 @@
 {
   "name": "language-tutalk",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Support for TuTalk scenario language in Atom",
   "engines": {
     "atom": "*"
@@ -12,7 +12,7 @@
   },
   "homepage": {
     "url": "https://github.com/ckot/language-tutalk#readme"
-  }
+  },
   "bugs": {
     "url": "https://github.com/ckot/language-tutalk/issues"
   },
