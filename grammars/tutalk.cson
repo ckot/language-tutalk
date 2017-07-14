@@ -13,8 +13,19 @@
 ]
 'repository':
   'comment':
-    'match': '\\s*#.+$'
-    'name': 'comment.line.tutalk'
+    'begin': '(^[ \\t]+)?(?=#)'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.whitespace.comment.leading.tutalk'
+    'end': '(?!\\G)'
+    'patterns': [
+      'begin': '#'
+      'beginCaptures':
+        '0':
+          'punctuation.definition.comment.tutalk'
+      'end': '\\n'
+      'name': 'comment.line.tutalk'
+    ]
   'string_literal':
     'name': 'string.quoted.double.tutalk'
     'begin': '"'
