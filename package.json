@@ -10,8 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/ckot/language-tutalk.git"
   },
+  "homepage": {
+    "url": "https://github.com/ckot/language-tutalk#readme"
+  }
   "bugs": {
     "url": "https://github.com/ckot/language-tutalk/issues"
   },
-  "license": "Proprietary"
+  "license": "Proprietary",
+  "readmeFilename": "README.md"
 }
