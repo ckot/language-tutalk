@@ -1,0 +1,11 @@
+'.source.tutalk':
+    'editor':
+      'autoIndentOnPaste': false,
+      'softTabs': true,
+      'tabLength': 2
+      'commentStart': '# '
+
+# "foldEndPattern": "^\\s*\\}|^\\s*\\]|^\\s*\\)",
+# "nonWordCharacters": "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?-…"
+# 'increaseIndentPattern': '^\\s*(c|g)\\b.*\\s*$'
+# 'decreaseIndentPattern': '^\\s*$'
