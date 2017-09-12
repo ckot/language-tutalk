@@ -36,7 +36,7 @@
       '1':
         'name': 'entity.name.function.tutalk'
   'attributes':
-    'match': '\\b(trans|min|sem|diff|flag|kc)\\s'
+    'match': '\\b(trans|min|sem|diff|flag|kc|answer)\\s'
     'captures':
       '1':
         'name': 'storage.modifier.tutalk'
