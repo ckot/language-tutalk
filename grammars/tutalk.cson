@@ -36,17 +36,17 @@
       '1':
         'name': 'entity.name.function.tutalk'
   'attributes':
-    'match': '\\b(trans|min|sem|diff|kc)\\s'
+    'match': '\\b(trans|min|sem|diff|flag|kc)\\s'
     'captures':
       '1':
         'name': 'storage.modifier.tutalk'
   'keywords':
-    'match': '\\b(say|do)\\b'
+    'match': '\\b(say-nomatch|say|do-nomatch|do)\\b'
     'captures':
       '1':
         'name': 'keyword.control.loop.tutalk'
   'conditional':
-    'match': '\\b(if|else|response|unant)\\b'
+    'match': '\\b(if|response|else|otherwise|unant)\\b'
     'captures':
       '1':
         'name': 'storage.type.tutalk'
